@@ -14,7 +14,7 @@ Adds some QOL methods to EntityClass like:
 * `exists` and `notExists` which do not load the entity, but rather check if it exists (or not exists) in the database using `COUNT`
 
 ## Datetime
-Adds an easy way of specifing the default value for `LocalDateTime` columns.
+Adds an easy way of specifing the default value for `LocalDateTime` columns via `defaultNow(TimeZone)` and `defaultNowUTC`
 
 ## Serialization
 Brings in the `Jsonb` type from `PostgeSQL` in combination with kotlinx serialization
