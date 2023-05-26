@@ -1,6 +1,4 @@
 # Xposed
-A simple utility library for Exposed
-
 Xposed provides additional utilities for [Exposed](https://github.com/JetBrains/Exposed) which likely won't be added to it.
 
 ## Core
