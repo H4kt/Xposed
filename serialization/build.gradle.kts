@@ -11,6 +11,8 @@ dependencies {
 
     implementation("org.postgresql:postgresql:42.5.1")
 
+    implementation("dev.h4kt.xposed:xposed-core:1.0")
+
 }
 
 kotlin {
