@@ -1,5 +1,28 @@
+![Maven central badge](https://maven-badges.herokuapp.com/maven-central/dev.h4kt.xposed/xposed-core/badge.svg?style=flat)
+
 # Xposed
 Xposed provides additional utilities for [Exposed](https://github.com/JetBrains/Exposed) which likely won't be added to it.
+
+## How to use it
+### Make sure you have Maven Central Repository enabled
+
+build.gradle.kts
+```kotlin
+repositories {
+  mavenCentral()
+}
+```
+### Add your desired modules as dependencies
+
+build.gradle.kts
+```kotlin
+dependencies {
+  implementation("dev.h4kt.xposed:xposed-core:1.0")
+  implementation("dev.h4kt.xposed:xposed-dao:1.0")
+  implementation("dev.h4kt.xposed:xposed-kotlinx-datetime:1.0")
+  implementation("dev.h4kt.xposed:xposed-serialization:1.0")
+}
+```
 
 ## Core
 Adds additional SQL operations like: `DISTINCT ON`, `TRUNC`, `EXTRACT`
