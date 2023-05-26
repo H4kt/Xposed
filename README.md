@@ -1,3 +1,5 @@
+![Maven central badge](https://maven-badges.herokuapp.com/maven-central/dev.h4kt.xposed/xposed-core/badge.svg?style=flat)
+
 # Xposed
 Xposed provides additional utilities for [Exposed](https://github.com/JetBrains/Exposed) which likely won't be added to it.
 
