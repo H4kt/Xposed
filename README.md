@@ -1,3 +1,4 @@
+![Kotlin version badge](https://img.shields.io/badge/kotlin-1.8.20-green)
 ![Maven central badge](https://maven-badges.herokuapp.com/maven-central/dev.h4kt.xposed/xposed-core/badge.svg?style=flat)
 
 # Xposed
