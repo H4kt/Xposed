@@ -34,7 +34,7 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
 
     group = "dev.h4kt.xposed"
-    version = "1.0"
+    version = "1.1"
 
     java {
         withSourcesJar()
@@ -64,7 +64,7 @@ subprojects {
             maven {
 
                 name = "GitHubPackages"
-                url = uri("https://github.com/H4kt/Xposed")
+                url = uri("https://maven.pkg.github.com/H4kt/Xposed")
 
                 credentials {
                     username = System.getenv("GITHUB_USERNAME") ?: env.fetchOrNull("GITHUB_USERNAME")
@@ -117,8 +117,8 @@ subprojects {
 
     }
 
-    signing {
-        publishing.publications.forEach(::sign)
-    }
+//    signing {
+//        publishing.publications.forEach(::sign)
+//    }
 
 }
