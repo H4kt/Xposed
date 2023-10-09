@@ -38,8 +38,10 @@ Adds some QOL methods to EntityClass like:
 ## Datetime
 Adds an easy way of specifing the default value for `LocalDateTime` columns via `defaultNow(TimeZone)` and `defaultNowUTC`
 
-## Serialization
-Brings in the `Jsonb` type from `PostgeSQL` in combination with kotlinx serialization
+## ~~Serialization~~
+~~Brings in the `Jsonb` type from `PostgeSQL` in combination with kotlinx serialization~~
+
+Serialization module is now obsolete by [exposed-json](https://github.com/JetBrains/Exposed)
 
 
 ## More to come
