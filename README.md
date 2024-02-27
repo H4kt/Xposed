@@ -46,8 +46,12 @@ Adds additional SQL operations like: `DISTINCT ON`, `TRUNC`, `EXTRACT`
 
 A cleaner way to initialize transactions: `suspendedTransaction` and `suspendedTransactionIfNotInOne` which creates a transaction only if called outside of a transaction scope.
 
+___
+
 ### Datetime
 Adds an easy way of specifing the default value for `LocalDateTime` columns via `defaultNow(TimeZone)` and `defaultNowUTC`
+
+___
 
 ### Codegen (Experimental)
 Codegen module allows you to automatically generate a DTO, repository interface and implementation for your models/entities.
