@@ -1,42 +1,56 @@
-![Maven metadata URL](https://img.shields.io/maven-metadata/v?metadataUrl=https://repo.h4kt.dev/releases/dev/h4kt/ktor-docs/maven-metadata.xml&logo=apachemaven&label=Maven&color=37bbbd)
+[![publish](https://github.com/H4kt/ktor-vk-auth/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/H4kt/ktor-vk-auth/actions/workflows/publish.yml)
+![Maven latest version](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.h4kt.dev%2Freleases%2Fdev%2Fh4kt%2Fxposed%2Fmaven-metadata.xml&logo=apachemaven)
 ![Kotlin](https://img.shields.io/badge/kotlin-1.9.22-7f52ff?logo=Kotlin&label=Kotlin)
-[![Deploy](https://github.com/H4kt/Xposed/actions/workflows/deploy.yml/badge.svg)](https://github.com/H4kt/Xposed/actions/workflows/deploy.yml)
 
 # Xposed
 Xposed provides additional utilities for [Exposed](https://github.com/JetBrains/Exposed)
 
-## How to use it
-### Add repository
-
-build.gradle.kts
+## Installation
+### Gradle
+#### Kotlin
 ```kotlin
 repositories {
-    maven("https://repo.h4kt.dev/releases")
+  maven("https://repo.h4kt.dev/releases")
 }
-```
-### Add your desired modules as dependencies
 
-build.gradle.kts
-```kotlin
 dependencies {
-  implementation("dev.h4kt.xposed:xposed-core:1.1.0")
-  implementation("dev.h4kt.xposed:xposed-codegen:1.1.0")
-  implementation("dev.h4kt.xposed:xposed-kotlinx-datetime:1.1.0")
+  implementation("dev.h4kt.xposed:xposed-<module>:<version>")
 }
 ```
 
-## Core
+<details>
+
+  <summary>Groovy</summary>
+
+  You should really switch to Kotlin DSL, you know?
+
+  Nevertheless
+
+  ```groovy
+  repositories {
+    maven {
+      url "https://repo.h4kt.dev/releases"
+    }
+  }
+
+  dependencies {
+    implementation "dev.h4kt.xposed:xposed-<module>:<version>"
+  }
+  ```
+</details>
+
+## Usage
+
+### Core
 Adds additional SQL operations like: `DISTINCT ON`, `TRUNC`, `EXTRACT`
 
 A cleaner way to initialize transactions: `suspendedTransaction` and `suspendedTransactionIfNotInOne` which creates a transaction only if called outside of a transaction scope.
 
-## Datetime
+### Datetime
 Adds an easy way of specifing the default value for `LocalDateTime` columns via `defaultNow(TimeZone)` and `defaultNowUTC`
 
-## Codegen (WIP)
+### Codegen (Experimental)
 Codegen module allows you to automatically generate a DTO, repository interface and implementation for your models/entities.
-
-### How to use it?
 
 #### Install [KSP Gradle Plugin](https://github.com/google/ksp)
 build.gradle.kts
