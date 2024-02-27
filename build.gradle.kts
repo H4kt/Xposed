@@ -53,8 +53,8 @@ subprojects {
                 }
 
                 credentials {
-                    username = env.H4KT_REPO_USERNAME.orNull()
-                    password = env.H4KT_REPO_PASSWORD.orNull()
+                    username = env.H4KT_REPO_USERNAME.orNull() ?: System.getenv("H4KT_REPO_USERNAME")
+                    password = env.H4KT_REPO_PASSWORD.orNull() ?: System.getenv("H4KT_REPO_PASSWORD")
                 }
 
             }
