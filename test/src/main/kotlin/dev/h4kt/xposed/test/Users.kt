@@ -1,6 +1,6 @@
 package dev.h4kt.xposed.test
 
-import dev.h4kt.xposed.annotations.ExperimentalApi
+import dev.h4kt.xposed.annotations.ExperimentalXposedApi
 import dev.h4kt.xposed.codegen.annotations.Model
 import dev.h4kt.xposed.codegen.generated.repositories.user.XposedUserRepository
 import org.jetbrains.exposed.dao.id.UUIDTable
@@ -10,7 +10,7 @@ enum class UserRole {
     DEFAULT, ADMIN
 }
 
-@OptIn(ExperimentalApi::class)
+@OptIn(ExperimentalXposedApi::class)
 @Model
 object Users : UUIDTable("user") {
     val name = varchar("name", 64)

@@ -9,6 +9,7 @@ import com.google.devtools.ksp.processing.SymbolProcessor
 import com.google.devtools.ksp.symbol.KSAnnotated
 import com.google.devtools.ksp.symbol.KSClassDeclaration
 import com.google.devtools.ksp.validate
+import dev.h4kt.xposed.annotations.ExperimentalXposedApi
 import dev.h4kt.xposed.codegen.annotations.Model
 import dev.h4kt.xposed.codegen.generators.DtoGenerator
 import dev.h4kt.xposed.codegen.generators.RepositoryGenerator
@@ -16,6 +17,7 @@ import dev.h4kt.xposed.codegen.types.ModelInfo
 import org.jetbrains.exposed.dao.id.IdTable
 import org.jetbrains.exposed.sql.Column
 
+@OptIn(ExperimentalXposedApi::class)
 internal class ModelAnnotationProcessor(
     private val logger: KSPLogger,
     private val codeGenerator: CodeGenerator
