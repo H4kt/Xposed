@@ -1,5 +1,5 @@
-[![publish](https://github.com/H4kt/ktor-vk-auth/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/H4kt/ktor-vk-auth/actions/workflows/publish.yml)
-![Maven latest version](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.h4kt.dev%2Freleases%2Fdev%2Fh4kt%2Fxposed%2Fmaven-metadata.xml&logo=apachemaven)
+[![publish](https://github.com/H4kt/Xposed/actions/workflows/publish.yml/badge.svg?branch=master)](https://github.com/H4kt/Xposed/actions/workflows/publish.yml)
+![Maven latest version](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepo.h4kt.dev%2Freleases%2Fdev%2Fh4kt%2Fxposed%2Fxposed-core%2Fmaven-metadata.xml&logo=apachemaven)
 ![Kotlin](https://img.shields.io/badge/kotlin-1.9.22-7f52ff?logo=Kotlin&label=Kotlin)
 
 # Xposed
